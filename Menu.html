@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fork & Flame - Menu</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/Menu.css"/>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="brand">
+      <img src="Restaurant images/logoo.jpeg" class="brand-logo" alt="Fork & Flame Logo">
+    </div>
+
+    <nav class="nav">
+      <a href="Home.html">Home</a>
+      <a href="About.html">About</a>
+      <a class="active" href="Menu.html">Menu</a>
+      <a href="Contact.html">Contact Us</a>
+      <a href="Services.html">Service</a>
+      
+    </nav>
+
+    <div class="right-area">
+      <div class="search-wrap">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search"/>
+      </div>
+      <button class="icon-btn" aria-label="Cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Our Menu</h1>
+      <p>Freshly cooked meals with premium ingredients</p>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="burgers">Burgers</button>
+        <button class="filter-btn" data-filter="pizza">Pizza</button>
+        <button class="filter-btn" data-filter="rice">Rice</button>
+        <button class="filter-btn" data-filter="beverages">Beverages</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU CONTENT -->
+  <main class="menu-wrap">
+
+    <!-- Burgers -->
+    <section class="category" data-cat="burgers">
+      <div class="cat-title">
+        <span class="dot"></span>
+        <h2>Burgers &amp; Sandwiches</h2>
+      </div>
+
+      <div class="grid">
+        <div class="item" data-type="burgers">
+          <img src="Restaurant images/burger.avif" alt="Chicken Burger">
+          <h3>Chicken Burger</h3>
+          <p>Juicy chicken patty, fresh veggies, special sauce.</p>
+          <div class="price">Price (LKR) 1,200</div>
+        </div>
+
+        <div class="item" data-type="burgers">
+          <img src="Restaurant images/beif.jpg" alt="Cheese Burger">
+          <h3>Cheese Burger</h3>
+          <p>Cheesy, crispy, and delicious with fresh toppings.</p>
+          <div class="price">Price (LKR) 1,350</div>
+        </div>
+
+        <div class="item" data-type="burgers">
+          <img src="Restaurant images/sandwich.avif" alt="Club Sandwich">
+          <h3>Club Sandwich</h3>
+          <p>Layered chicken sandwich with egg & greens.</p>
+          <div class="price">Price (LKR) 1,200</div>
+        </div>
+        <div class="item" data-type="burgers">
+          <img src="Restaurant images/veggie.webp" alt="Club Sandwich">
+          <h3>Club Sandwich</h3>
+          <p>Layered chicken sandwich with egg & greens.</p>
+          <div class="price">Price (LKR) 1,200</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pizza -->
+    <section class="category" data-cat="pizza">
+      <div class="cat-title">
+        <span class="dot"></span>
+        <h2>Pizza &amp; Pasta</h2>
+      </div>
+
+      <div class="grid">
+        <div class="item" data-type="pizza">
+          <img src="Restaurant images/pizza.jpg" alt="Veg Pizza">
+          <h3>Veg Pizza</h3>
+          <p>Cheesy pizza topped with fresh garden vegetables.</p>
+          <div class="price">Price (LKR) 1,200</div>
+        </div>
+
+        <div class="item" data-type="pizza">
+          <img src="Restaurant images/chickenPizza.avif" alt="Chicken Pizza">
+          <h3>Chicken Pizza</h3>
+          <p>Loaded chicken, mozzarella, and rich tomato base.</p>
+          <div class="price">Price (LKR) 1,450</div>
+        </div>
+
+        <div class="item" data-type="pizza">
+          <img src="Restaurant images/cheesePasta.webp" alt="Creamy Pasta">
+          <h3>Creamy Pasta</h3>
+          <p>Creamy sauce pasta with herbs and cheese.</p>
+          <div class="price">Price (LKR) 1,350</div>
+        </div>
+
+        <div class="item" data-type="pizza">
+          <img src="Restaurant images/vegePasta.jpg" alt="Noodles">
+          <h3>Noodles</h3>
+          <p>Spicy stir-fried noodles with veggies.</p>
+          <div class="price">Price (LKR) 1,150</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rice -->
+    <section class="category" data-cat="rice">
+      <div class="cat-title">
+        <span class="dot"></span>
+        <h2>Rice &amp; Main Dishes</h2>
+      </div>
+
+      <div class="grid">
+        <div class="item" data-type="rice">
+          <img src="Restaurant images/fried_Rice.jpg" alt="Seafood Rice">
+          <h3>Chicken Fried Rice</h3>
+          <p>Flavor-packed rice with prawns, squid and spices.</p>
+          <div class="price">Price (LKR) 2,300</div>
+        </div>
+
+        <div class="item" data-type="rice">
+          <img src="Restaurant images/seafood.jpg" alt="Mixed Fried Rice">
+          <h3>Mixed Fried Rice</h3>
+          <p>Mixed fried rice with chicken, egg, and veggies.</p>
+          <div class="price">Price (LKR) 2,000</div>
+        </div>
+
+        <div class="item" data-type="rice">
+          <img src="Restaurant images/grilledChicken.webp" alt="BBQ Chicken">
+          <h3>Grilled Chicken</h3>
+          <p>Smoky grilled chicken glazed with BBQ sauce.</p>
+          <div class="price">Price (LKR) 2,000</div>
+        </div>
+
+        <div class="item" data-type="rice">
+          <img src="Restaurant images/BBQ.webp" alt="Spicy Chicken">
+          <h3>Devilled Chicken</h3>
+          <p>Hot & spicy chicken served with chef’s sauce.</p>
+          <div class="price">Price (LKR) 1,950</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beverages -->
+    <section class="category" data-cat="beverages">
+      <div class="cat-title">
+        <span class="dot"></span>
+        <h2>Beverages</h2>
+      </div>
+
+      <div class="grid">
+        <div class="item" data-type="beverages">
+          <img src="Restaurant images/fresh-fruit-juice.jpg" alt="Fresh Juice">
+          <h3>Fresh Fruit Juice</h3>
+          <p>Refreshing juice made with seasonal fruits.</p>
+          <div class="price">Price (LKR) 750</div>
+        </div>
+
+        <div class="item" data-type="beverages">
+          <img src="Restaurant images/milkshake.jpg" alt="Milkshake">
+          <h3>Milkshake</h3>
+          <p>Thick creamy shake topped with whipped cream.</p>
+          <div class="price">Price (LKR) 950</div>
+        </div>
+
+        <div class="item" data-type="beverages">
+          <img src="Restaurant images/iceCoffee.jpg" alt="Iced Coffee">
+          <h3>Iced Coffee</h3>
+          <p>Chilled coffee blended with milk and ice.</p>
+          <div class="price">Price (LKR) 850</div>
+        </div>
+
+        <div class="item" data-type="beverages">
+          <img src="Restaurant images/softDrink.jpg" alt="Milk Tea">
+          <h3>Soft Drink</h3>
+          <p>Classic sweet milk tea served cold.</p>
+          <div class="price">Price (LKR) 650</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-col">
+      <h3>Fork &amp; Flame</h3>
+      <p class="tagline">Where Passion Meets the Plate</p>
+      <p class="quote">“We serve freshly prepared meals crafted with love, fire, and premium ingredients.”</p>
+
+      <div class="social">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <ul class="contact">
+        <li><i class="fa-solid fa-location-dot"></i> Location: Colombo, Sri Lanka</li>
+        <li><i class="fa-solid fa-phone"></i> Phone number</li>
+        <li><i class="fa-solid fa-envelope"></i> Email address</li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>
