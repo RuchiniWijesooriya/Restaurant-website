@@ -1,0 +1,196 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
+body{background:#fff;color:#111;}
+
+/* HEADER */
+.topbar{
+  height:85px;
+  display:flex;
+  align-items:center;
+  gap:18px;
+  padding:10px 22px;
+  background:#fff;
+  border-bottom:1px solid #eee;
+}
+.brand-logo{width:110px;height:110px;object-fit:contain;display:block;}
+
+.nav{display:flex;align-items:center;gap:18px;}
+.nav a{text-decoration:none;color:#111;font-size:13px;}
+.nav a.active{color:#e53935;font-weight:700;}
+
+.right-area{
+  margin-left:auto;
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.search-wrap{
+  width:min(320px, 35vw);
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:#f3f3f3;
+  border-radius:20px;
+  padding:8px 12px;
+  color:#666;
+}
+.search-wrap input{width:100%;border:none;outline:none;background:transparent;font-size:13px;}
+.icon-btn{border:none;background:transparent;cursor:pointer;font-size:20px;color:#111;}
+
+/* HERO */
+.hero{
+  height:300px;
+  background:url("../Restaurant images/cover.png") center/cover no-repeat;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.55);
+}
+.hero-inner{
+  position:relative;
+  z-index:1;
+  color:#fff;
+}
+.hero-inner h1{
+  font-size:30px;
+  font-weight:900;
+}
+
+/* WRAP */
+.wrap{
+  max-width:980px;
+  margin:0 auto;
+  padding:18px 14px 24px;
+}
+
+.about-box{
+  background:#efe7e7;
+  padding:16px 16px 14px;
+  border-radius:6px;
+}
+.about-box h2{
+  text-align:center;
+  font-size:20px;
+  font-weight:900;
+  margin-bottom:10px;
+}
+.about-box p{
+  font-size:12px;
+  color:#444;
+  line-height:1.6;
+  margin-bottom:10px;
+}
+
+.mv{
+  margin-top:10px;
+}
+.mv-item h3{
+  font-size:12px;
+  font-weight:900;
+  color:#e53935;
+  margin:10px 0 6px;
+}
+.mv-item p{
+  margin:0;
+}
+
+/* Meet our chefs */
+.section-title{
+  text-align:center;
+  font-size:17px;
+  font-weight:900;
+  margin:18px 0 12px;
+}
+
+.chefs{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.chef-card{
+  display:flex;
+  gap:12px;
+  background:#fff;
+  border:1px solid #eee;
+  border-radius:6px;
+  padding:10px;
+}
+
+.chef-card img{
+  width:110px;
+  height:110px;
+  border-radius:6px;
+  object-fit:cover;
+}
+
+.chef-info h3{
+  font-size:12px;
+  font-weight:900;
+  margin-bottom:6px;
+}
+.chef-info p{
+  font-size:11px;
+  color:#555;
+  line-height:1.5;
+}
+.chef-info ul{
+  margin-top:8px;
+  padding-left:16px;
+  font-size:11px;
+  color:#444;
+}
+.chef-info li{margin:3px 0;}
+
+/* FOOTER */
+.footer{
+  display:grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap:30px;
+  padding:22px 28px;
+  background:#fff;
+  border-top:1px solid #eee;
+}
+.footer h3{margin-bottom:6px;}
+.footer h4{margin-bottom:10px;}
+.tagline{font-size:12px;font-weight:700;color:#e53935;margin-bottom:6px;}
+.quote{font-size:12px;color:#444;line-height:1.5;max-width:340px;}
+.social{margin-top:10px;display:flex;gap:14px;font-size:18px;color:#111;}
+.footer ul{list-style:none;}
+.footer ul li{margin:7px 0;font-size:13px;color:#444;}
+.footer ul li a{color:#444;text-decoration:none;}
+.footer ul li a:hover{text-decoration:underline;}
+.contact li{display:flex;align-items:center;gap:10px;}
+.contact i{width:16px;color:#111;}
+
+/* Responsive */
+@media (max-width: 640px){
+  .nav{display:none;}
+  .search-wrap{display:none;}
+  .chef-card{flex-direction:column;align-items:flex-start;}
+  .chef-card img{width:100%;height:160px;}
+}
+
+.specialities h4{
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.specialities ul{
+  padding-left: 18px;      /* bullet spacing */
+  margin: 0;
+}
+
+.specialities li{
+  font-style: italic;
+  font-size: 13px;
+  margin-bottom: 4px;
+  color: #111;
+}
