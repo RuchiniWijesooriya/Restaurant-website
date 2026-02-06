@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fork & Flame - Login</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <link rel="stylesheet" href="css/Login.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="brand">
+      <img src="Restaurant images/logoo.jpeg" alt="Fork & Flame Logo" class="brand-logo">
+    </div>
+  </header>
+
+  <!-- HERO / LOGIN -->
+  <main class="hero">
+    <div class="overlay"></div>
+
+    <section class="login-area">
+      <h2>Welcome Back to</h2>
+      <h1>Fork &amp; Flame</h1>
+      <p>Enter your credentials to access your account and continue your<br/>Food journey with us.</p>
+
+      <div class="card">
+        <form id="loginForm">
+          <label>Email Address</label>
+          <input id="email" type="email" placeholder="example@gmail.com" />
+
+          <label>Password</label>
+          <input id="password" type="password" placeholder="example" />
+
+          <div class="row">
+            <label class="remember">
+              <input id="remember" type="checkbox" />
+              <span>Remember me</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary" >Login</button>
+
+          <div class="or">OR</div>
+
+          <button type="button" class="btn btn-outline" id="googleBtn">Login with Google</button>
+          <button type="button" class="btn btn-outline" id="fbBtn">Login with Facebook</button>
+
+          <div class="signup">
+            Don't have an account?
+            <a href="Register.html">Sign Up</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-col">
+      <h3>Fork &amp; Flame</h3>
+      <p class="tagline">Where Passion Meets the Plate</p>
+      <p class="quote">“We serve freshly prepared meals crafted with love, fire, and premium ingredients.”</p>
+
+      <div class="social">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <ul class="contact">
+        <li><i class="fa-solid fa-location-dot"></i> Location: Colombo, Sri Lanka</li>
+        <li><i class="fa-solid fa-phone"></i> Phone number</li>
+        <li><i class="fa-solid fa-envelope"></i> Email address</li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/Login.js"></script>
+</body>
+</html>
