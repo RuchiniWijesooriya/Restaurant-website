@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fork & Flame - Sign Up</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/Register.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="brand">
+      <img src="Restaurant images/logoo.jpeg" alt="Fork & Flame Logo" class="brand-logo">
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="hero">
+    <div class="overlay"></div>
+    <section class="signup-area">
+
+      <div class="intro">
+        <h2>Join</h2>
+        <h1>Fork &amp; Flame</h1>
+        <p>Join us and taste the flavors made with dedication and expertise.</p>
+      </div>
+
+      <div class="card">
+        <form id="signupForm">
+
+          <label>First Name</label>
+          <input id="firstName" type="text" placeholder="Enter First Name" />
+
+          <label>Last Name</label>
+          <input id="lastName" type="text" placeholder="Enter Last Name" />
+
+          <label>Email Address</label>
+          <input id="email" type="email" placeholder="Enter Email Address" />
+
+          <label>Password</label>
+          <input id="password" type="password" placeholder="Enter Password" />
+
+          <label>Re - Enter Password</label>
+          <input id="confirmPassword" type="password" placeholder="Enter Re- Enter Password" />
+
+          <label class="checkbox-row">
+            <input id="offers" type="checkbox" checked />
+            <span>I'd like to recieve special offers via email</span>
+          </label>
+
+          <button type="submit" class="btn btn-primary">Create Account</button>
+
+          <div class="or">OR</div>
+
+          <button type="button" class="btn btn-outline" id="googleBtn">Login with Google</button>
+          <button type="button" class="btn btn-outline" id="fbBtn">Login with Facebook</button>
+
+          <div class="signin">
+            Do You have an account?
+            <a href="login.html">Sign In</a>
+          </div>
+
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-col">
+      <h3>Fork &amp; Flame</h3>
+      <p class="tagline">Where Passion Meets the Plate</p>
+      <p class="quote">“We serve freshly prepared meals crafted with love, fire, and premium ingredients.”</p>
+
+      <div class="social">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <ul class="contact">
+        <li><i class="fa-solid fa-location-dot"></i> Location: Colombo, Sri Lanka</li>
+        <li><i class="fa-solid fa-phone"></i> Phone number</li>
+        <li><i class="fa-solid fa-envelope"></i> Email address</li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/Register.js"></script>
+</body>
+</html>
